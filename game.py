@@ -35,23 +35,25 @@ elif(x==2):
     print("Paper\n")
     print(paper)
 elif(x==3):
-    print("SCissors\n")
+    print("Scissors\n")
     print(scissors)
-else:
+if(x>3 or x<1):
     print("Invalid choice!")
-print("Computer choice is: ")
-if(y==1):
-    print("Rock\n")
-    print(rock)
-elif(y==2):
-    print("Paper\n")
-    print(paper)
-elif(y==3):
-    print("SCissors\n")
-    print(scissors)
-if(x==y):
-    print("\nThere is a tie!")
-elif(x==1 and y==3)or(x==2 and y==1) or (x==3 and y==2):
-    print("\nYou won!")
 else:
-    print("You lost!!")
+    print("Computer choice is: ")
+    if(y==1):
+        print("Rock\n")
+        print(rock)
+    elif(y==2):
+        print("Paper\n")
+        print(paper)
+    elif(y==3):
+        print("Scissors\n")
+        print(scissors)
+    if(x==y):
+        print("\nThere is a tie!")
+    elif(x==1 and y==3)or(x==2 and y==1) or (x==3 and y==2):
+        print("\nYou won!")
+        
+    else:
+        print("You lost!!")
